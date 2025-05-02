@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Автоматизована Система Бібліотеки</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Бібліотечна система</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="#catalog">Каталог</a></li>
+        <li><a href="#search">Пошук</a></li>
+        <li><a href="#account">Мій кабінет</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="catalog" class="section fade-in">
+      <h2>Каталог книг</h2>
+      <div class="book-list">
+        <div class="book-card">"Тіні забутих предків" — М. Коцюбинський</div>
+        <div class="book-card">"Кобзар" — Т. Шевченко</div>
+        <div class="book-card">"Залишенець" — В. Шкляр</div>
+      </div>
+    </section>
+
+    <section id="search" class="section fade-in">
+      <h2>Пошук книг</h2>
+      <input type="text" placeholder="Введіть назву книги..." id="searchInput" />
+      <button onclick="searchBook()">Пошук</button>
+      <p id="searchResult"></p>
+    </section>
+
+    <section id="account" class="section fade-in">
+      <h2>Мій кабінет</h2>
+      <p>Тут ви зможете переглядати свої книги, історію та нагадування.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Бібліотека України</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
